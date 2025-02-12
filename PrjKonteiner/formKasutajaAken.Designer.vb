@@ -22,6 +22,7 @@ Partial Class formKasutajaAken
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.txtSisendTekst = New System.Windows.Forms.TextBox()
         Me.txtValjundTekst1 = New System.Windows.Forms.TextBox()
         Me.txtValjundTekst2 = New System.Windows.Forms.TextBox()
@@ -30,6 +31,9 @@ Partial Class formKasutajaAken
         Me.lblSisendtekst = New System.Windows.Forms.Label()
         Me.lblPooramineFunktsiooniga = New System.Windows.Forms.Label()
         Me.lblPooramineProtseduuriga = New System.Windows.Forms.Label()
+        Me.btnStopp = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.timerUuenda = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'txtSisendTekst
@@ -41,15 +45,19 @@ Partial Class formKasutajaAken
         '
         'txtValjundTekst1
         '
+        Me.txtValjundTekst1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtValjundTekst1.Location = New System.Drawing.Point(281, 187)
         Me.txtValjundTekst1.Name = "txtValjundTekst1"
+        Me.txtValjundTekst1.ReadOnly = True
         Me.txtValjundTekst1.Size = New System.Drawing.Size(431, 26)
         Me.txtValjundTekst1.TabIndex = 1
         '
         'txtValjundTekst2
         '
+        Me.txtValjundTekst2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtValjundTekst2.Location = New System.Drawing.Point(281, 310)
         Me.txtValjundTekst2.Name = "txtValjundTekst2"
+        Me.txtValjundTekst2.ReadOnly = True
         Me.txtValjundTekst2.Size = New System.Drawing.Size(431, 26)
         Me.txtValjundTekst2.TabIndex = 2
         '
@@ -103,11 +111,38 @@ Partial Class formKasutajaAken
         Me.lblPooramineProtseduuriga.TabIndex = 7
         Me.lblPooramineProtseduuriga.Text = "Pööra Protseduuriga"
         '
+        'btnStopp
+        '
+        Me.btnStopp.Enabled = False
+        Me.btnStopp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStopp.Location = New System.Drawing.Point(508, 27)
+        Me.btnStopp.Name = "btnStopp"
+        Me.btnStopp.Size = New System.Drawing.Size(114, 36)
+        Me.btnStopp.TabIndex = 8
+        Me.btnStopp.Text = "Stopp"
+        Me.btnStopp.UseVisualStyleBackColor = True
+        '
+        'btnStart
+        '
+        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.Location = New System.Drawing.Point(348, 27)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(114, 36)
+        Me.btnStart.TabIndex = 9
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'timerUuenda
+        '
+        Me.timerUuenda.Interval = 3000
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnStart)
+        Me.Controls.Add(Me.btnStopp)
         Me.Controls.Add(Me.lblPooramineProtseduuriga)
         Me.Controls.Add(Me.lblPooramineFunktsiooniga)
         Me.Controls.Add(Me.lblSisendtekst)
@@ -131,4 +166,7 @@ Partial Class formKasutajaAken
     Friend WithEvents lblSisendtekst As Label
     Friend WithEvents lblPooramineFunktsiooniga As Label
     Friend WithEvents lblPooramineProtseduuriga As Label
+    Friend WithEvents btnStopp As Button
+    Friend WithEvents btnStart As Button
+    Friend WithEvents timerUuenda As Timer
 End Class
