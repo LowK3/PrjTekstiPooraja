@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PrjTekstiPoorajaKomponent", "PrjTekstiPoorajaKomponent\PrjTekstiPoorajaKomponent.vbproj", "{9717D5B7-9DFD-40D9-A21C-249E238895E0}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PrjKonteiner", "PrjKonteiner\PrjKonteiner.vbproj", "{30156C4B-0289-4782-9CB7-9E0ED7A4BEAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9717D5B7-9DFD-40D9-A21C-249E238895E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9717D5B7-9DFD-40D9-A21C-249E238895E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9717D5B7-9DFD-40D9-A21C-249E238895E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30156C4B-0289-4782-9CB7-9E0ED7A4BEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30156C4B-0289-4782-9CB7-9E0ED7A4BEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30156C4B-0289-4782-9CB7-9E0ED7A4BEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30156C4B-0289-4782-9CB7-9E0ED7A4BEAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
