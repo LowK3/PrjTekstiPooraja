@@ -42,6 +42,7 @@
 
     Private Function PooraTekst() As String _
         Implements ITeisendaja.PooraTekst
+
         Return StrReverse(PooratavTekst)
     End Function
 

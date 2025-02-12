@@ -39,16 +39,20 @@
 
         Dim tagurpidiTekst As String
 
-        For i = Len(sisendTekst) To 0
-            tagurpidiTekst = tagurpidiTekst + sisendTekst.Chars(i)
+        For i = sisendTekst.Length - 1 To 0 Step -1
+            tagurpidiTekst = tagurpidiTekst & sisendTekst.Chars(i)
         Next
         PooratavTekst = tagurpidiTekst
     End Sub
 
     Private Function PooraTekst() As String _
         Implements ITeisendaja.PooraTekst
-        TeisendaTekst(PooratavTekst)
-        Return PooratavTekst
+        Dim tagurpidiTekst As String
+
+        For i = PooratavTekst.Length - 1 To 0 Step -1
+            tagurpidiTekst = tagurpidiTekst & PooratavTekst.Chars(i)
+        Next
+        Return tagurpidiTekst
     End Function
 
     Private Function LoeTaishaalikud(ByRef sisendTekst As String) _

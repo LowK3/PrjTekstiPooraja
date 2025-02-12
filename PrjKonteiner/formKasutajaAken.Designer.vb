@@ -43,35 +43,39 @@ Partial Class formKasutajaAken
         '
         'txtSisendTekst
         '
-        Me.txtSisendTekst.Location = New System.Drawing.Point(228, 29)
+        Me.txtSisendTekst.Location = New System.Drawing.Point(152, 19)
+        Me.txtSisendTekst.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSisendTekst.Name = "txtSisendTekst"
-        Me.txtSisendTekst.Size = New System.Drawing.Size(431, 26)
+        Me.txtSisendTekst.Size = New System.Drawing.Size(289, 20)
         Me.txtSisendTekst.TabIndex = 0
         '
         'txtValjundTekst1
         '
         Me.txtValjundTekst1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtValjundTekst1.Location = New System.Drawing.Point(228, 140)
+        Me.txtValjundTekst1.Location = New System.Drawing.Point(152, 91)
+        Me.txtValjundTekst1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtValjundTekst1.Name = "txtValjundTekst1"
         Me.txtValjundTekst1.ReadOnly = True
-        Me.txtValjundTekst1.Size = New System.Drawing.Size(431, 26)
+        Me.txtValjundTekst1.Size = New System.Drawing.Size(289, 20)
         Me.txtValjundTekst1.TabIndex = 1
         '
         'txtValjundTekst2
         '
         Me.txtValjundTekst2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtValjundTekst2.Location = New System.Drawing.Point(228, 263)
+        Me.txtValjundTekst2.Location = New System.Drawing.Point(152, 171)
+        Me.txtValjundTekst2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtValjundTekst2.Name = "txtValjundTekst2"
         Me.txtValjundTekst2.ReadOnly = True
-        Me.txtValjundTekst2.Size = New System.Drawing.Size(431, 26)
+        Me.txtValjundTekst2.Size = New System.Drawing.Size(289, 20)
         Me.txtValjundTekst2.TabIndex = 2
         '
         'btnPooraFunktsiooniga
         '
         Me.btnPooraFunktsiooniga.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPooraFunktsiooniga.Location = New System.Drawing.Point(295, 186)
+        Me.btnPooraFunktsiooniga.Location = New System.Drawing.Point(197, 121)
+        Me.btnPooraFunktsiooniga.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnPooraFunktsiooniga.Name = "btnPooraFunktsiooniga"
-        Me.btnPooraFunktsiooniga.Size = New System.Drawing.Size(274, 34)
+        Me.btnPooraFunktsiooniga.Size = New System.Drawing.Size(183, 22)
         Me.btnPooraFunktsiooniga.TabIndex = 3
         Me.btnPooraFunktsiooniga.Text = "Pööra Funktsiooniga"
         Me.btnPooraFunktsiooniga.UseVisualStyleBackColor = True
@@ -79,9 +83,10 @@ Partial Class formKasutajaAken
         'btnPooraProtseduuriga
         '
         Me.btnPooraProtseduuriga.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPooraProtseduuriga.Location = New System.Drawing.Point(295, 309)
+        Me.btnPooraProtseduuriga.Location = New System.Drawing.Point(197, 201)
+        Me.btnPooraProtseduuriga.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnPooraProtseduuriga.Name = "btnPooraProtseduuriga"
-        Me.btnPooraProtseduuriga.Size = New System.Drawing.Size(274, 34)
+        Me.btnPooraProtseduuriga.Size = New System.Drawing.Size(183, 22)
         Me.btnPooraProtseduuriga.TabIndex = 4
         Me.btnPooraProtseduuriga.Text = "Pööra Protseduuriga"
         Me.btnPooraProtseduuriga.UseVisualStyleBackColor = True
@@ -90,9 +95,10 @@ Partial Class formKasutajaAken
         '
         Me.lblSisendtekst.AutoSize = True
         Me.lblSisendtekst.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSisendtekst.Location = New System.Drawing.Point(82, 30)
+        Me.lblSisendtekst.Location = New System.Drawing.Point(55, 20)
+        Me.lblSisendtekst.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSisendtekst.Name = "lblSisendtekst"
-        Me.lblSisendtekst.Size = New System.Drawing.Size(114, 25)
+        Me.lblSisendtekst.Size = New System.Drawing.Size(81, 17)
         Me.lblSisendtekst.TabIndex = 5
         Me.lblSisendtekst.Text = "Sisendtekst"
         '
@@ -100,9 +106,10 @@ Partial Class formKasutajaAken
         '
         Me.lblPooramineFunktsiooniga.AutoSize = True
         Me.lblPooramineFunktsiooniga.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPooramineFunktsiooniga.Location = New System.Drawing.Point(6, 141)
+        Me.lblPooramineFunktsiooniga.Location = New System.Drawing.Point(4, 92)
+        Me.lblPooramineFunktsiooniga.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPooramineFunktsiooniga.Name = "lblPooramineFunktsiooniga"
-        Me.lblPooramineFunktsiooniga.Size = New System.Drawing.Size(191, 25)
+        Me.lblPooramineFunktsiooniga.Size = New System.Drawing.Size(138, 17)
         Me.lblPooramineFunktsiooniga.TabIndex = 6
         Me.lblPooramineFunktsiooniga.Text = "Pööra Funktsiooniga"
         '
@@ -110,9 +117,10 @@ Partial Class formKasutajaAken
         '
         Me.lblPooramineProtseduuriga.AutoSize = True
         Me.lblPooramineProtseduuriga.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPooramineProtseduuriga.Location = New System.Drawing.Point(6, 264)
+        Me.lblPooramineProtseduuriga.Location = New System.Drawing.Point(4, 172)
+        Me.lblPooramineProtseduuriga.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPooramineProtseduuriga.Name = "lblPooramineProtseduuriga"
-        Me.lblPooramineProtseduuriga.Size = New System.Drawing.Size(190, 25)
+        Me.lblPooramineProtseduuriga.Size = New System.Drawing.Size(139, 17)
         Me.lblPooramineProtseduuriga.TabIndex = 7
         Me.lblPooramineProtseduuriga.Text = "Pööra Protseduuriga"
         '
@@ -120,9 +128,10 @@ Partial Class formKasutajaAken
         '
         Me.btnStopp.Enabled = False
         Me.btnStopp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStopp.Location = New System.Drawing.Point(455, 396)
+        Me.btnStopp.Location = New System.Drawing.Point(303, 257)
+        Me.btnStopp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnStopp.Name = "btnStopp"
-        Me.btnStopp.Size = New System.Drawing.Size(114, 36)
+        Me.btnStopp.Size = New System.Drawing.Size(76, 23)
         Me.btnStopp.TabIndex = 8
         Me.btnStopp.Text = "Stopp"
         Me.btnStopp.UseVisualStyleBackColor = True
@@ -130,9 +139,10 @@ Partial Class formKasutajaAken
         'btnStart
         '
         Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(295, 396)
+        Me.btnStart.Location = New System.Drawing.Point(197, 257)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(114, 36)
+        Me.btnStart.Size = New System.Drawing.Size(76, 23)
         Me.btnStart.TabIndex = 9
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = True
@@ -145,9 +155,10 @@ Partial Class formKasutajaAken
         '
         Me.lblPikkus.AutoSize = True
         Me.lblPikkus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPikkus.Location = New System.Drawing.Point(670, 32)
+        Me.lblPikkus.Location = New System.Drawing.Point(447, 21)
+        Me.lblPikkus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPikkus.Name = "lblPikkus"
-        Me.lblPikkus.Size = New System.Drawing.Size(68, 22)
+        Me.lblPikkus.Size = New System.Drawing.Size(46, 15)
         Me.lblPikkus.TabIndex = 10
         Me.lblPikkus.Text = "Pikkus:"
         '
@@ -155,9 +166,10 @@ Partial Class formKasutajaAken
         '
         Me.lblTaishaalikuteArv.AutoSize = True
         Me.lblTaishaalikuteArv.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTaishaalikuteArv.Location = New System.Drawing.Point(621, 58)
+        Me.lblTaishaalikuteArv.Location = New System.Drawing.Point(414, 38)
+        Me.lblTaishaalikuteArv.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTaishaalikuteArv.Name = "lblTaishaalikuteArv"
-        Me.lblTaishaalikuteArv.Size = New System.Drawing.Size(117, 22)
+        Me.lblTaishaalikuteArv.Size = New System.Drawing.Size(80, 15)
         Me.lblTaishaalikuteArv.TabIndex = 12
         Me.lblTaishaalikuteArv.Text = "Täishäälikud:"
         '
@@ -165,9 +177,10 @@ Partial Class formKasutajaAken
         '
         Me.lblAscViimane.AutoSize = True
         Me.lblAscViimane.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAscViimane.Location = New System.Drawing.Point(621, 102)
+        Me.lblAscViimane.Location = New System.Drawing.Point(418, 67)
+        Me.lblAscViimane.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAscViimane.Name = "lblAscViimane"
-        Me.lblAscViimane.Size = New System.Drawing.Size(119, 22)
+        Me.lblAscViimane.Size = New System.Drawing.Size(80, 15)
         Me.lblAscViimane.TabIndex = 13
         Me.lblAscViimane.Text = "Viimane Asc: "
         '
@@ -175,27 +188,29 @@ Partial Class formKasutajaAken
         '
         Me.lblAscEsimene.AutoSize = True
         Me.lblAscEsimene.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAscEsimene.Location = New System.Drawing.Point(621, 80)
+        Me.lblAscEsimene.Location = New System.Drawing.Point(414, 52)
+        Me.lblAscEsimene.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAscEsimene.Name = "lblAscEsimene"
-        Me.lblAscEsimene.Size = New System.Drawing.Size(124, 22)
+        Me.lblAscEsimene.Size = New System.Drawing.Size(84, 15)
         Me.lblAscEsimene.TabIndex = 14
         Me.lblAscEsimene.Text = "Esimene Asc: "
         '
         'chcAlgoritmilinePooraja
         '
         Me.chcAlgoritmilinePooraja.AutoSize = True
-        Me.chcAlgoritmilinePooraja.Location = New System.Drawing.Point(228, 89)
+        Me.chcAlgoritmilinePooraja.Location = New System.Drawing.Point(152, 58)
+        Me.chcAlgoritmilinePooraja.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chcAlgoritmilinePooraja.Name = "chcAlgoritmilinePooraja"
-        Me.chcAlgoritmilinePooraja.Size = New System.Drawing.Size(178, 24)
+        Me.chcAlgoritmilinePooraja.Size = New System.Drawing.Size(120, 17)
         Me.chcAlgoritmilinePooraja.TabIndex = 15
         Me.chcAlgoritmilinePooraja.Text = "Algoritmiline Pööraja"
         Me.chcAlgoritmilinePooraja.UseVisualStyleBackColor = True
         '
         'formKasutajaAken
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(533, 292)
         Me.Controls.Add(Me.chcAlgoritmilinePooraja)
         Me.Controls.Add(Me.lblAscEsimene)
         Me.Controls.Add(Me.lblAscViimane)
@@ -211,6 +226,7 @@ Partial Class formKasutajaAken
         Me.Controls.Add(Me.txtValjundTekst2)
         Me.Controls.Add(Me.txtValjundTekst1)
         Me.Controls.Add(Me.txtSisendTekst)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "formKasutajaAken"
         Me.Text = "Tekstitöötlus"
         Me.ResumeLayout(False)

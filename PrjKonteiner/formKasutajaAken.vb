@@ -61,18 +61,22 @@ Public Class formKasutajaAken
 
     Private Sub txtSisendTekst_TextChanged(sender As Object, e As EventArgs) Handles txtSisendTekst.TextChanged
         Dim nTaishaalikud As PrjTekstiPoorajaKomponent.ITeisendaja
+        nTaishaalikud = Klass
 
         Dim tekst As String = txtSisendTekst.Text
 
-        nTaishaalikud = Klass
+        lblPikkus.Text = "Pikkus: " & tekst.Length
 
-        lblPikkus.Text = "Pikkus: " + Str(Len(tekst))
+        lblTaishaalikuteArv.Text = "Täishäälikud: " & nTaishaalikud.LoeTaishaalikud(tekst)
 
-        lblTaishaalikuteArv.Text = "Täishäälikud: " + Str(nTaishaalikud.LoeTaishaalikud(tekst))
+        If Len(tekst) > 0 Then
+            lblAscEsimene.Text = "Esimene Asc: " & Asc(Mid(tekst, 1, 1))
+            lblAscViimane.Text = "Viimane Asc: " & Asc(Mid(tekst, Len(tekst), 1))
+        Else
+            lblAscEsimene.Text = "Esimene Asc: -"
+            lblAscViimane.Text = "Viimane Asc: -"
+        End If
 
-        lblAscEsimene.Text = "Esimene Asc: " + Str(Asc(Mid(tekst, 1, 1)))
-
-        lblAscViimane.Text = "Viimane Asc: " + Str(Asc(Mid(tekst, Len(tekst), 1)))
     End Sub
 
     Private Sub chcAlgoritmilinePooraja_CheckedChanged(sender As Object, e As EventArgs) Handles chcAlgoritmilinePooraja.CheckedChanged
@@ -82,4 +86,5 @@ Public Class formKasutajaAken
             Klass = New PrjTekstiPoorajaKomponent.TekstiPooraja
         End If
     End Sub
+
 End Class
