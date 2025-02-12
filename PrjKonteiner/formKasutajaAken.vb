@@ -7,12 +7,14 @@ Public Class formKasutajaAken
 
     End Sub
 
+    Private Klass = New PrjTekstiPoorajaKomponent.TekstiPooraja
+
     Private Sub btnPooraFunktsiooniga_Click(sender As Object, e As EventArgs) _
         Handles btnPooraFunktsiooniga.Click
 
         Dim pooraja As PrjTekstiPoorajaKomponent.ITeisendaja
 
-        pooraja = New PrjTekstiPoorajaKomponent.TekstiPooraja
+        pooraja = Klass
 
         pooraja.Tekst = txtSisendTekst.Text
 
@@ -24,7 +26,7 @@ Public Class formKasutajaAken
 
         Dim pooraja As PrjTekstiPoorajaKomponent.ITeisendaja
 
-        pooraja = New PrjTekstiPoorajaKomponent.TekstiPooraja
+        pooraja = Klass
 
         pooraja.TeisendaTekst(txtSisendTekst.Text)
 
@@ -50,7 +52,7 @@ Public Class formKasutajaAken
     Private Sub timerUuenda_Tick(sender As Object, e As EventArgs) Handles timerUuenda.Tick
         Dim pooraja As PrjTekstiPoorajaKomponent.ITeisendaja
 
-        pooraja = New PrjTekstiPoorajaKomponent.TekstiPooraja
+        pooraja = Klass
 
         pooraja.Tekst = txtSisendTekst.Text
 
@@ -62,7 +64,7 @@ Public Class formKasutajaAken
 
         Dim tekst As String = txtSisendTekst.Text
 
-        nTaishaalikud = New PrjTekstiPoorajaKomponent.TekstiPooraja
+        nTaishaalikud = Klass
 
         lblPikkus.Text = "Pikkus: " + Str(Len(tekst))
 
@@ -71,5 +73,13 @@ Public Class formKasutajaAken
         lblAscEsimene.Text = "Esimene Asc: " + Str(Asc(Mid(tekst, 1, 1)))
 
         lblAscViimane.Text = "Viimane Asc: " + Str(Asc(Mid(tekst, Len(tekst), 1)))
+    End Sub
+
+    Private Sub chcAlgoritmilinePooraja_CheckedChanged(sender As Object, e As EventArgs) Handles chcAlgoritmilinePooraja.CheckedChanged
+        If chcAlgoritmilinePooraja.Checked Then
+            Klass = New PrjTekstiPoorajaKomponent.AlgoritmilineTekstiPooraja
+        Else
+            Klass = New PrjTekstiPoorajaKomponent.TekstiPooraja
+        End If
     End Sub
 End Class

@@ -38,6 +38,7 @@ Partial Class formKasutajaAken
         Me.lblTaishaalikuteArv = New System.Windows.Forms.Label()
         Me.lblAscViimane = New System.Windows.Forms.Label()
         Me.lblAscEsimene = New System.Windows.Forms.Label()
+        Me.chcAlgoritmilinePooraja = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'txtSisendTekst
@@ -180,11 +181,22 @@ Partial Class formKasutajaAken
         Me.lblAscEsimene.TabIndex = 14
         Me.lblAscEsimene.Text = "Esimene Asc: "
         '
+        'chcAlgoritmilinePooraja
+        '
+        Me.chcAlgoritmilinePooraja.AutoSize = True
+        Me.chcAlgoritmilinePooraja.Location = New System.Drawing.Point(228, 89)
+        Me.chcAlgoritmilinePooraja.Name = "chcAlgoritmilinePooraja"
+        Me.chcAlgoritmilinePooraja.Size = New System.Drawing.Size(178, 24)
+        Me.chcAlgoritmilinePooraja.TabIndex = 15
+        Me.chcAlgoritmilinePooraja.Text = "Algoritmiline Pööraja"
+        Me.chcAlgoritmilinePooraja.UseVisualStyleBackColor = True
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.chcAlgoritmilinePooraja)
         Me.Controls.Add(Me.lblAscEsimene)
         Me.Controls.Add(Me.lblAscViimane)
         Me.Controls.Add(Me.lblTaishaalikuteArv)
@@ -221,4 +233,5 @@ Partial Class formKasutajaAken
     Friend WithEvents lblTaishaalikuteArv As Label
     Friend WithEvents lblAscViimane As Label
     Friend WithEvents lblAscEsimene As Label
+    Friend WithEvents chcAlgoritmilinePooraja As CheckBox
 End Class
