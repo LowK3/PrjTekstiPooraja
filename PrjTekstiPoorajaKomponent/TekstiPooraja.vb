@@ -5,6 +5,7 @@
     Private AlgusSymbol As Integer
     Private LoppSymbol As Integer
     Private PooratavTekst As String
+    Private Const Taishaalikud As String = "aeiouõäöü"
 
     Private Property EsimeseTaheAsciiKood As Integer Implements ITeisendaja.EsimeseTaheAsciiKood
         Get
@@ -35,11 +36,24 @@
 
     Private Sub TeisendaTekst(ByRef sisendTekst As String) _
         Implements ITeisendaja.TeisendaTekst
+
         PooratavTekst = StrReverse(sisendTekst)
     End Sub
 
     Private Function PooraTekst() As String _
         Implements ITeisendaja.PooraTekst
         Return StrReverse(PooratavTekst)
+    End Function
+
+    Private Function LoeTaishaalikud(ByRef sisendTekst As String) _
+        Implements ITeisendaja.LoeTaishaalikud
+        Dim numTaishaalikud As Integer = 0
+
+        For i = 1 To Len(sisendTekst)
+            If InStr(Taishaalikud, Mid(sisendTekst, i, 1)) Then
+                numTaishaalikud = numTaishaalikud + 1
+            End If
+        Next
+        Return numTaishaalikud
     End Function
 End Class

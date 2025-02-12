@@ -56,4 +56,20 @@ Public Class formKasutajaAken
 
         txtValjundTekst1.Text = pooraja.PooraTekst
     End Sub
+
+    Private Sub txtSisendTekst_TextChanged(sender As Object, e As EventArgs) Handles txtSisendTekst.TextChanged
+        Dim nTaishaalikud As PrjTekstiPoorajaKomponent.ITeisendaja
+
+        Dim tekst As String = txtSisendTekst.Text
+
+        nTaishaalikud = New PrjTekstiPoorajaKomponent.TekstiPooraja
+
+        lblPikkus.Text = "Pikkus: " + Str(Len(tekst))
+
+        lblTaishaalikuteArv.Text = "Täishäälikud: " + Str(nTaishaalikud.LoeTaishaalikud(tekst))
+
+        lblAscEsimene.Text = "Esimene Asc: " + Str(Asc(Mid(tekst, 1, 1)))
+
+        lblAscViimane.Text = "Viimane Asc: " + Str(Asc(Mid(tekst, Len(tekst), 1)))
+    End Sub
 End Class

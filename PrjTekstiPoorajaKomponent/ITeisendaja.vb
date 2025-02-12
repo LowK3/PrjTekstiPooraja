@@ -5,4 +5,5 @@
 
     Function PooraTekst() As String
     Sub TeisendaTekst(ByRef sisendTekst As String)
+    Function LoeTaishaalikud(ByRef sisendTekst As String)
 End Interface
